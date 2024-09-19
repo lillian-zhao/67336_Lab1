@@ -19,7 +19,7 @@ console.log("Hello, World!");
 let firstName = "Katelyn";
 let age = 20;
 let isStudent = true;
-console.log(name, age, isStudent);
+console.log(firstName, age, isStudent);
 
 // The following examples are given to illustrate how to use string concatenation, simple arithmetic/manipulation of numerical variables, 
 // and console logging with variables works in Javascript.
@@ -41,12 +41,13 @@ console.log(sum(5, 7));
 
 // Write a function that takes two strings as arguments and returns their concatenation (hint: we used concatenation in Challenge 1.1). 
 // Use "typeof" to check the arguments are both strings before returning, otherwise return "Invalid Arguments!"
+// Hint: "typeof" returns a String of the type (if the type is integer, it will return "integer") so be sure to use quotes!
 // Call the function with different arguments and display the results in the console.
 
 // Your code here
 
 // Challenge 1.3
-// Here is an example of if-else statements in JSON. It logs to console depending on whether certain conditions are fulfilled.
+// Here is an example of if-else statements in JS. It logs to console depending on whether certain conditions are fulfilled.
 let number = 8;
 if (number > 0) {
     console.log("The number is positive.");
@@ -303,7 +304,7 @@ function displayYourData(data) {
 }
 
 // Challenge 6
-// Deploy your project to GitHub Pages. Follow the instructions in instructions.ipynb.
+// Deploy your project to GitHub Pages. Follow the instructions in the "Part 2: Deployment" in instructions.ipynb.
 
 // Congratulations! You have now completed learning the basics of Javascript. 
 // There is so much more to learn than we can cover here, please check the linked resources for this lab for more learning!
