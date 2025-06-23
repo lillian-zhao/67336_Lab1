@@ -3,11 +3,7 @@
 <br>
 It is ***crucial*** that you read the following instructions before working on anything in this project.
 Throughout this lab, make sure to commit regularly and push your changes to GitHub.
-<br>
-
-Resources
-- https://gist.github.com/bradtraversy/cc180de0edee05075a6139e42d5f28ce
-- 
+<br> 
 
 ***Have fun learning Javascript!***
 ## Step 1: Check for Node.js and VSCode
