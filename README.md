@@ -16,10 +16,20 @@ Make sure Node is installed by going to your terminal and typing the following c
 node -v
 ```
 
-If not, download it from [https://nodejs.org](https://nodejs.org).  
-Also install [VSCode](https://code.visualstudio.com/) if you haven’t already.
+If not, download it from [https://nodejs.org](https://nodejs.org). Also install [VSCode](https://code.visualstudio.com/) if you haven’t already.
 
-## Step 2: Create Your GitHub Repository
+## Step 2: Clone the Starter Repository
+
+1. Create a folder on your computer for 67-336. Open Terminal at this folder by CD-ing into it. Please refer to this documentation for help on how to do this: [Basic Git Commits](https://gist.github.com/bradtraversy/cc180de0edee05075a6139e42d5f28ce). 
+
+2. Clone the repo using this command:
+
+```bash 
+git clone https://github.com/CMU-67336-Data-Visualization/Lab01_JavaScriptFoundations.git
+cd Lab01_JavaScriptFoundations
+```
+
+## Step 3: Create Your Own Private GitHub Repo
 
 1. Go to [GitHub](https://github.com) and create a new **private** repository named:
 
@@ -33,87 +43,108 @@ lab-1-67336
 - `wenchaohu1`
 - `lexik04`
 
-  [You must do this step for us to be able to grade your submission!]
+You **must** do this so we can grade your lab.
 
-## Step 3: Set Up Local Folder
+## Step 4: Connect the Starter Repo to Your New GitHub Repo
 
-Create a folder on your computer to store all your future labs for 67-336. Create a sub-folder for Lab 01. Open a Terminal window at this folder (lab1 folder) by cd-ing into it [Basic Git Commits](https://gist.github.com/bradtraversy/cc180de0edee05075a6139e42d5f28ce) and run the following command to initialize the local Git repository:
+### 1. Check the Current Remote
 
 ```bash
-git init
+git remote -v
 ```
 
-Then link to your GitHub repo:
+You should see:
+
+```
+origin  https://github.com/CMU-67336-Data-Visualization/Lab01_JavaScriptFoundations.git (fetch)
+origin  https://github.com/CMU-67336-Data-Visualization/Lab01_JavaScriptFoundations.git (push)
+```
+
+### 2. Remove the Existing Remote
+
+```bash
+git remote remove origin
+```
+
+Verify it was removed:
+
+```bash
+git remote -v
+```
+
+_No output means success._
+
+### 3. Add Your New Remote
 
 ```bash
 git remote add origin https://github.com/YOUR-USERNAME/lab-1-67336.git
 ```
-(Replace `YOUR-USERNAME` with your actual GitHub username.)
 
-## 🔀 Step 3.5: Work on a Branch
-
-To follow good Git practices, create a new branch to do your lab work:
+Replace `YOUR-USERNAME` with your GitHub username.  
+Verify:
 
 ```bash
-git checkout -b lab-dev
+git remote -v
 ```
 
-Now make your changes (e.g., edit files, add code), and then stage and commit them:
+You should now see your personal repo. 
 
-```bash
-git add .
-git commit -m "Completed Hello World and setup"
-```
-
-Push your branch to GitHub:
-
-```bash
-git push -u origin lab-dev
-```
-
-Once you're ready to merge changes into `main`, run:
-
-```bash
-git checkout main
-git merge lab-dev
-git push origin main
-```
-
----
-
-## Step 4: Initialize the Project
 Initiate with the following command to initialize a package.json for the lab:
 
 ```bash
 npm init -y
 ```
 
-This will create a `package.json` file. Open `package.json` and replace the `"scripts"` section with: 
+This will create a package.json file. Open package.json and replace the "scripts" section with:
 
-```json
+```bash
 "scripts": {
   "start": "node index.js",
   "test": "echo \"Error: no test specified\" && exit 1"
 }
 ```
 
-## Step 5: Write Hello World
-
-Create an `index.js` file:
+### 4. Push to Your Repository
 
 ```bash
-touch index.js
+git add .
+git commit -m "Initial commit from starter repo and created package.json"
+git push --set-upstream origin main
+```
+Go to Github, please make sure the files are populated into your repository. If not, please stop, and ask for help. 
+
+
+## Step 5: Use a Development Branch
+
+For best coding practices, you should **not** be working on the main branch. To keep your `main` branch clean:
+
+1. Create a new branch.
+```bash
+git checkout -b lab-dev
 ```
 
-Add this inside `index.js` add the following code:
-
-```javascript
-console.log('Hello, World!');
-```
-
-Now test that everything works by running the start script we added earlier to run the index.js file in the terminal:
+2. Make any changes you want to any file, then:
 
 ```bash
+git add .
+git commit -m "Made updates"
+git push -u origin lab-dev
+```
+
+3. After you make sure the code is correct, you can merge onto main branch: 
+
+```bash
+git checkout main
+git merge lab-dev
+git push
+``` 
+
+## Step 6: Run the Starter Code
+
+Inside the project directory, install Node dependencies (if any) and run the code.
+
+```bash
+npm install
 npm start
 ```
 
@@ -123,23 +154,9 @@ You should see:
 Hello, World!
 ```
 
-Congrats! You just wrote your first "Hello World" program in Javascript!
+## Step 7: Follow the comments and complete the index.js and index.html files. 
 
-Follow the next steps to get the starter files for the coding portion of the lab.
-
-## Step 6: Get the Starter Code
-
-Clone the starter repo into a **new folder**:
-
-```bash
-git clone https://github.com/CMU-67336-Data-Visualization/Lab01_JavaScriptFoundations.git
-```
-
-Copy `index.js` and `index.html` from that repo into your current lab folder, replacing your current `index.js`.
-
----
-
-## Step 7: Deployment on Vercel
+## Step 8: Deployment on Vercel
 
 We’ll use [Vercel](https://vercel.com) to deploy your JavaScript project.
 
@@ -167,8 +184,15 @@ After deployment finishes, you’ll get a live preview URL like:
 https://lab-1-67336-yourname.vercel.app/
 ```
 
-## Step 8: Submitting on Canvas
+## Step 9: Submitting on Canvas
 
-Submit a your **Vercel URL** in your Canvas submission and your GitHub repo link!
+Submit the following:
+
+- Your **GitHub repo link**
+- Your **Vercel live site link**
 
 ⚠️ Don’t forget to add `shihongh`, `wenchaoh`, `lexik04` as collaborators on GitHub so we can grade your lab!
+
+-- 
+
+That’s it! You’ve cloned a project, set up Git, deployed on Vercel, and written some JavaScript!
