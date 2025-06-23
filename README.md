@@ -148,13 +148,11 @@ npm install
 npm start
 ```
 
-You should see:
+You should see a lot of output in your terminal. 
 
-```
-Hello, World!
-```
+## Step 7: Follow the comments and complete the index.js and index.html files 
 
-## Step 7: Follow the comments and complete the index.js and index.html files. 
+You can use [W3 Schools](https://www.w3schools.com/js/) for support on how to write in Javascript. **PLEASE DO NOT USE AI**
 
 ## Step 8: Deployment on Vercel
 
