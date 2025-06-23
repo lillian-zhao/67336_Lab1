@@ -1,11 +1,13 @@
 # Lab 1: JavaScript Foundations
 
-<br>
-It is ***crucial*** that you read the following instructions before working on anything in this project.
+It is **crucial** that you read the following instructions before working on anything in this project.
 Throughout this lab, make sure to commit regularly and push your changes to GitHub.
-<br> 
 
 ***Have fun learning Javascript!***
+
+---
+
+
 ## Step 1: Check for Node.js and VSCode
 
 Make sure Node is installed by going to your terminal and typing the following command:
@@ -35,9 +37,7 @@ lab-1-67336
 
 ## Step 3: Set Up Local Folder
 
-Create a folder on your computer to store all your future labs for 67-336. Create a sub-folder for lab 01. 
-
-Open a Terminal window at this folder by cd-ing into it (refer to this: https://gist.github.com/bradtraversy/cc180de0edee05075a6139e42d5f28ce) and run the following command to initialize the local Git repository:
+Create a folder on your computer to store all your future labs for 67-336. Create a sub-folder for Lab 01. Open a Terminal window at this folder (lab1 folder) by cd-ing into it [Basic Git Commits](https://gist.github.com/bradtraversy/cc180de0edee05075a6139e42d5f28ce) and run the following command to initialize the local Git repository:
 
 ```bash
 git init
@@ -50,14 +50,45 @@ git remote add origin https://github.com/YOUR-USERNAME/lab-1-67336.git
 ```
 (Replace `YOUR-USERNAME` with your actual GitHub username.)
 
+## 🔀 Step 3.5: Work on a Branch
+
+To follow good Git practices, create a new branch to do your lab work:
+
+```bash
+git checkout -b lab-dev
+```
+
+Now make your changes (e.g., edit files, add code), and then stage and commit them:
+
+```bash
+git add .
+git commit -m "Completed Hello World and setup"
+```
+
+Push your branch to GitHub:
+
+```bash
+git push -u origin lab-dev
+```
+
+Once you're ready to merge changes into `main`, run:
+
+```bash
+git checkout main
+git merge lab-dev
+git push origin main
+```
+
+---
+
 ## Step 4: Initialize the Project
 Initiate with the following command to initialize a package.json for the lab:
 
 ```bash
 npm init -y
 ```
-This will create a `package.json` file.  
-Open `package.json` and replace the scripts section with:
+
+This will create a `package.json` file. Open `package.json` and replace the `"scripts"` section with: 
 
 ```json
 "scripts": {
