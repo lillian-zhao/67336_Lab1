@@ -6,7 +6,8 @@
 // Please remember to uncomment your code before submission.
 
 // Challenge 1.0
-// As seen in your hello world program, we can write to the console with console.log()
+// We can write to the console (your terminal) with console.log()
+// You should see "Hello, World!" in your terminal when you run npm start
 console.log("Hello, World!");
 
 // Write JavaScript code below to display "Welcome to JavaScript!" in the console.
@@ -147,10 +148,10 @@ console.log(updateJob({name: "Peter", age: 21, job: "Engineer"}, "Manager"));
 // For all following code, it will not be able to be run directly in the console. 
 // Instead, you should open the index.html file we have provided in a browser and the JS will run with the HTML.
 // To do this, right click the index.html file within the "Explorer" sidebar of your VSCode window and select "Open with Live Server".
+// We recommend using Chrome as your browser. 
 
 // To access the console within your browser:
-// If running in Safari, go to Safari Settings -> Advanced -> check the box for Show Developer Tools, then go to Develop -> Show Javascript Console to check console logging.
-// If running in Chrome, right click on the page and select "Inspect" then click on the "Console" tab.
+// Click on the three dots menu on the top right browser --> More Tools --> Developer Tools --> Console 
 
 // Challenge 3.1
 // In this Challenge section 3, we begin working with the Document Object Model (DOM).
@@ -199,7 +200,7 @@ document.body.appendChild(newElement);
 // See the section marked "Challenge 4.1 | Example" in index.html for an example of how we can "react" to a button click (this is the event!) by displaying an alert.
 // Observe carefully how we added Event Listeners using the method addEventListener(), which attaches an event handler to our selected element.
 // Now under the section marked "Challenge 4.1 | Your Turn", write the event handling for a button that changes the background color of the colorDiv when clicked.
-// See the section marked "Challenge 4.1.2 | Example" in index.html for a more advanced example of using event listeners to log the coordinates of a mouse click within a specified area.
+// See the section marked "Advanced Example" in index.html for a more advanced example of using event listeners to log the coordinates of a mouse click within a specified area.
 
 
 // Challenge 5.1
@@ -303,8 +304,6 @@ function displayYourData(data) {
     // Your code here
 }
 
-// Challenge 6
-// Deploy your project to GitHub Pages. Follow the instructions in the "Part 2: Deployment" in instructions.ipynb.
-
 // Congratulations! You have now completed learning the basics of Javascript. 
+// Please deploy your project to GitHub Pages by following the instructions in the README.
 // There is so much more to learn than we can cover here, please check the linked resources for this lab for more learning!
