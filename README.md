@@ -31,7 +31,7 @@ cd Lab01_JavaScriptFoundations
 
 ## Step 3: Create Your Own Private GitHub Repo
 
-1. Go to [GitHub](https://github.com) and create a new **private** repository named:
+1. Go to your personal [GitHub](https://github.com) and create a new **private** repository named:
 
 ```
 lab-1-67336
