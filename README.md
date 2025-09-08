@@ -34,7 +34,7 @@ cd Lab01_JavaScriptFoundations
 1. Go to your personal [GitHub](https://github.com) and create a new **private** repository named:
 
 ```
-lab-1-67336
+67336_Lab1
 ```
 
 2. Go to **Settings > Collaborators** and add:
@@ -77,7 +77,7 @@ _No output means success._
 ### 3. Add Your New Remote
 
 ```bash
-git remote add origin https://github.com/YOUR-USERNAME/lab-1-67336.git
+git remote add origin https://github.com/YOUR-USERNAME/67336_Lab1.git
 ```
 
 Replace `YOUR-USERNAME` with your GitHub username.  
@@ -165,7 +165,7 @@ Go to [https://vercel.com](https://vercel.com) and sign up with your **GitHub ac
 ### 2. Import Your Project from GitHub
 
 1. On the Vercel dashboard, click **“Add New Project”**.
-2. Select your `lab-1-67336` repo.
+2. Select your `67336_Lab1` repo.
 3. For **Framework Preset**, choose **Other** (since this is a basic HTML + JS project).
 4. Make sure the following settings are correct:
    - **Root Directory**: `./` (or leave blank)
@@ -179,7 +179,7 @@ Then click **Deploy**.
 After deployment finishes, you’ll get a live preview URL like:
 
 ```
-https://lab-1-67336-yourname.vercel.app/
+https://67336_Lab1_yourname.vercel.app/
 ```
 
 ## Step 9: Submitting on Canvas
