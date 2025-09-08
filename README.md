@@ -20,7 +20,7 @@ If not, download it from [https://nodejs.org](https://nodejs.org). Also install 
 
 ## Step 2: Clone the Starter Repository
 
-1. Create a folder on your computer for 67-336. Open Terminal at this folder by CD-ing into it. Please refer to this documentation for help on how to do this: [Basic Git Commits](https://gist.github.com/bradtraversy/cc180de0edee05075a6139e42d5f28ce). 
+1. Create a folder on your computer for 67-336. Open Terminal at this folder by CD-ing into it. Please refer to this documentation for help on how to do this: [Common Terminal Commands](https://gist.github.com/bradtraversy/cc180de0edee05075a6139e42d5f28ce). 
 
 2. Clone the repo using this command:
 
