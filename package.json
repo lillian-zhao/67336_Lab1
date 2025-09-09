@@ -1,0 +1,21 @@
+{
+  "name": "lab01_javascriptfoundations",
+  "version": "1.0.0",
+  "description": "It is **crucial** that you read the following instructions before working on anything in this project.\r Throughout this lab, make sure to commit regularly and push your changes to GitHub.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lillian-zhao/67336_Lab1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lillian-zhao/67336_Lab1/issues"
+  },
+  "homepage": "https://github.com/lillian-zhao/67336_Lab1#readme"
+}
