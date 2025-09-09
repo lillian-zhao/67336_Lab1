@@ -8,7 +8,7 @@
 // Challenge 1.0
 // We can write to the console (your terminal) with console.log()
 // You should see "Hello, World!" in your terminal when you run npm start
-console.log("Hello, World!");
+console.log("Hello, World! This is the Dev Branch!");
 
 // Write JavaScript code below to display "Welcome to JavaScript!" in the console.
 
