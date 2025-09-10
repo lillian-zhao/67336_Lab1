@@ -8,15 +8,20 @@
 // Challenge 1.0
 // We can write to the console (your terminal) with console.log()
 // You should see "Hello, World!" in your terminal when you run npm start
-console.log("Hello, World! This is the Dev Branch!");
+console.log("---- challenge 1.0 ----")
+
+console.log("Hello, World!");
 
 // Write JavaScript code below to display "Welcome to JavaScript!" in the console.
 
 // Your code here
+console.log("Welcome to JavaScript!");
 
 // Challenge 1.1
 // Now let's get into variables and data types of JS. 
 // The following exanples are given to illustrate the syntax used to declare variables and data types:
+console.log("---- challenge 1.1 ----")
+
 let firstName = "Katelyn";
 let age = 20;
 let isStudent = true;
@@ -33,8 +38,19 @@ console.log(greeting, nextYearAge);
 
 // Your code here
 
+let favColor = "purple"
+let height = 170
+let likeJS = true
+console.log("Hi, my name is lillian, and my favorite color is: " + favColor);
+console.log("My height is: " + height + " in cm");
+console.log("I like javascript?: " + likeJS);
+
+
+
 //Challenge 1.2
 // Here is an example of a function in JS that calculates the sum of two given numbers a and b:
+console.log("---- challenge 1.2 ----")
+
 function sum(a, b) {
     return a + b;
 }
@@ -47,8 +63,21 @@ console.log(sum(5, 7));
 
 // Your code here
 
+function concat(a, b) {
+    if (typeof a === "string" && typeof b === "string") {
+        return a + b;
+    } else {
+        return "Invalid Arguments!";
+    }
+}
+
+console.log(concat("hi", " there"))
+console.log(concat(4, " there"))
+
 // Challenge 1.3
 // Here is an example of if-else statements in JS. It logs to console depending on whether certain conditions are fulfilled.
+console.log("---- challenge 1.3 ----")
+
 let number = 8;
 if (number > 0) {
     console.log("The number is positive.");
@@ -62,8 +91,20 @@ if (number > 0) {
 
 // Your code here
 
+let testString = "hi"
+
+if (testString.length == 0) {
+    console.log("The string is empty.");
+} else if (testString.length == 1) {
+    console.log("The string has only one character.");
+} else {
+    console.log("The string has multiple characters.");
+}
+
 // Challenge 1.4
 // Here we have an example of a for loop that prints its incrementation to the console from 1 to 10.
+
+console.log("---- challenge 1.4 ----")
 for (let i = 1; i <= 10; i++) {
     console.log(i);
 }
@@ -72,20 +113,34 @@ for (let i = 1; i <= 10; i++) {
 
 // Your code here
 
+for (let i = 2; i <= 20; i = i + 2) {
+    console.log(i);
+}
+
 // Challenge 1.5
 // Here we have an example of a while loop that prints its incrementation to the console from 1 to 10.
-let i = 1;
-while (i <= 10) {
-    console.log(i);
-    i++;
+console.log("---- challenge 1.5 ----")
+
+let a = 1;
+while (a <= 10) {
+    console.log(a);
+    a++;
 }
 
 // Write a program that prints the even numbers from 20 to 1 using a while loop.
 
 //Your code here
 
+let b = 20;
+while (b > 1) {
+    console.log(b);
+    b = b - 2;
+}
+
 // Challenge 2.1
 // Here we have a function that takes in an array and adds the sum of all the numbers in the array as an output.
+console.log("---- challenge 2.1 ----")
+
 let numbers = [1, 2, 3, 4, 5];
 numbers.forEach(num => console.log(num));
 
@@ -102,8 +157,18 @@ console.log(arraySum(numbers));
 
 // Your code here
 
+let favFoods = ["rice", "tofu", "pork belly", "cabbage", "short rib"]
+
+function printFoods(arr) {
+    return arr.join(", ")
+}
+
+console.log(printFoods(favFoods));
+
 // Challenge 2.2
 // Here we define a Person object with various properties like name, age, and job.
+console.log("---- challenge 2.2 ----")
+
 let person = {
     name: "Joe",
     age: 21,
@@ -121,8 +186,21 @@ printPerson(person);
 
 // Your code here
 
+let car = {
+    make: "Ford",
+    model: "Focus",
+    year: 2020
+};
+
+function printCar(c) {
+    console.log(`Make: ${c.make}, Model: ${c.model}, Year: ${c.year}`);
+}
+printCar(car);
+
 // Challenge 2.3
 // Here we have a function that manipulates an array of numbers that we previously defined in Challenge 2.1.
+console.log("---- challenge 2.3 ----")
+
 function addItem(arr, item) {
     arr.push(item);
     return arr;
@@ -134,7 +212,7 @@ function updateJob(p, newJob) {
     p.job = newJob;
     return p;
 }
-console.log(updateJob({name: "Peter", age: 21, job: "Engineer"}, "Manager"));
+console.log(updateJob({ name: "Peter", age: 21, job: "Engineer" }, "Manager"));
 
 // Write a function that removes the last item from an array. 
 // Hint: use .pop() instead of .push()
@@ -142,6 +220,20 @@ console.log(updateJob({name: "Peter", age: 21, job: "Engineer"}, "Manager"));
 // Then, write a function that updates the year of a car object.
 
 // Your code here
+
+function remItem(arr) {
+    arr.pop();
+    return arr;
+}
+
+console.log(remItem([1, 2, 3]));
+
+function updateCar(c, newYear) {
+    c.year = newYear;
+    return c;
+}
+console.log(updateCar(car, 2024));
+
 
 // Incorporating HTML with JS
 
@@ -169,6 +261,10 @@ console.log(myDiv, myP, myH1);
 // Make sure to use both getElementById() and querySelector() to get in practice with both!
 
 // Your code here
+let anotherDiv = document.getElementById("anotherDiv");
+let anotherP = document.querySelector(".anotherP");
+// let anotherH1 = document.querySelector("h1");
+console.log(anotherDiv, anotherP);
 
 // Challenge 3.2
 // Here is an example of changing the content of an element we selected in Challenge 3.1:
@@ -177,6 +273,7 @@ myDiv.textContent = "Hello, World!";
 // Write a program that changes the content of an element you selected in Challenge 3.1.
 
 // Your code here
+anotherDiv.textContent = "goodbye this time, World!";
 
 // See the section marked "Challenge 3.2 | Example" in index.html for an example of how we can use JS manipulation of selected elements to make a button.
 // Add a button to the HTML file and write a program that changes the content of a div when the button is clicked.
@@ -192,6 +289,9 @@ document.body.appendChild(newElement);
 // Write code that creates a new element and adds it to the DOM.
 
 // Your code here
+let anotherNewElement = document.createElement("h2");
+anotherNewElement.textContent = "This is the h2 I'm adding to the DOM.";
+document.body.appendChild(anotherNewElement);
 
 // See the section marked "Challenge 3.3.2 | Example" in index.html for a more advanced example of how we can use this ability to create and add elements to create a dynamic grocery list.
 
@@ -235,13 +335,15 @@ function fetchRawData() {
     console.log('Button clicked, starting fetch...');
     // Fetches from the specified API endpoint.
     fetch('https://jsonplaceholder.typicode.com/users')
-    // Logs the JSON response to the variable called response.
-    .then(response => response.json())
-    // Logs the data to console and calls our display function.
-    .then(data => {console.log(data);
-          displayRawData(data);})
-    // Catches any errors that might occur and logs it to console.
-    .catch(error => console.error('Error:', error));
+        // Logs the JSON response to the variable called response.
+        .then(response => response.json())
+        // Logs the data to console and calls our display function.
+        .then(data => {
+            console.log(data);
+            displayRawData(data);
+        })
+        // Catches any errors that might occur and logs it to console.
+        .catch(error => console.error('Error:', error));
 }
 
 // This function displays the raw JSON data for your reference.
@@ -266,10 +368,12 @@ function displayRawData(data) {
 function fetchData() {
     console.log('Button clicked, starting fetch...');
     fetch('https://jsonplaceholder.typicode.com/users')
-    .then(response => response.json())
-    .then(data => {console.log(data);
-          displayData(data);})
-    .catch(error => console.error('Error:', error));
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+            displayData(data);
+        })
+        .catch(error => console.error('Error:', error));
 }
 
 // This function displays our data in cleaner way on the page for better understanding.
@@ -295,15 +399,29 @@ function displayData(data) {
 // Hint: use the helpful tip from the example in Challenge 5.2.1 to reference the JSON output quickly.
 
 function fetchYourData() {
-    // Your code here
+    console.log('Button clicked, starting fetch for my data...');
+    fetch('https://api.github.com/users')
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+            displayYourData(data);
+        })
+        .catch(error => console.error('Error:', error));
 }
 
 function displayYourData(data) {
     const dataDisplay = document.getElementById('yourDataDisplay');
-    dataDisplay.innerHTML = ''; 
-    // Your code here
+    dataDisplay.innerHTML = '';
+
+    data.forEach(user => {
+        const userElement = document.createElement('div');
+        userElement.classList.add('user');
+        userElement.innerHTML = `<p>Login: <strong>${user.login}</strong> | Profile URL: ${user.html_url}</p>`;
+
+        dataDisplay.appendChild(userElement);
+    });
 }
 
-// Congratulations! You have now completed learning the basics of Javascript. 
+// Congratulations! You have now completed learning the basics of Javascript.
 // Please deploy your project to GitHub Pages by following the instructions in the README.
 // There is so much more to learn than we can cover here, please check the linked resources for this lab for more learning!
